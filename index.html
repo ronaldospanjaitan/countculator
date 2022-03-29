@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+    <title>Countculator</title>
+</head>
+<body>
+    <div class="punchline">
+    <h1>Countculator</h1>
+    <p>Not a best way to count, but it's kinda boring</p>
+</div>
+    <div class="calculator">
+<form action="" name="cal">
+        <input name="field" type="text" class="calculator-screen" placeholder="0" disabled />
+        
+        <div class="calculator-keys">
+          
+          <button type="button" onclick="insert('+')" class="operator" value="+">+</button>
+          <button type="button" onclick="insert('-')" class="operator" value="-">-</button>
+          <button type="button" onclick="insert('*')"class="operator" value="*">&times;</button>
+          <button type="button" onclick="insert('/')"class="operator" value="/">&divide;</button>
+      
+          <button type="button"  onclick="insert(7)"value="7">7</button>
+          <button type="button"  onclick="insert(8)"value="8">8</button>
+          <button type="button" onclick="insert(9)"value="9">9</button>
+      
+      
+          <button type="button" onclick="insert(4)" value="4">4</button>
+          <button type="button" onclick="insert(5)" value="5">5</button>
+          <button type="button" onclick="insert(6)" value="6">6</button>
+      
+      
+          <button type="button" onclick="insert(1)" value="1">1</button>
+          <button type="button" onclick="insert(2)" value="2">2</button>
+          <button type="button" onclick="insert(3)" value="3">3</button>
+      
+      
+          <button type="button" onclick="insert(0)" value="0">0</button>
+          <button type="button" onclick="insert('.')"class="decimal" value=".">.</button>
+          <button type="button" onclick="clean()"class="all-clear" value="all-clear">AC</button>
+      
+          <button type="button" class="equal-sign"  onclick="equal()"value="=">=</button>
+      
+        </div>
+    </form>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
